@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  html.dark {
+    color-scheme: dark;
+  }
+
+  html.light {
+    color-scheme: light;
+  }
+
+  body {
+    font-family: 'Outfit', sans-serif;
+    overflow-x: hidden;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Sora', sans-serif;
+  }
+}
+
+/* Custom Cursor Styles for Desktop (Hidden on touch devices) */
+@media (hover: hover) and (pointer: fine) {
+  .custom-cursor-dot {
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background-color: #C1121F;
+    border-radius: 50%;
+    z-index: 99999;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.2s ease, transform 0.05s ease;
+    box-shadow: 0 0 10px #C1121F, 0 0 20px rgba(193, 18, 31, 0.5);
+  }
+
+  .custom-cursor-ring {
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    border: 1.5px solid rgba(193, 18, 31, 0.7);
+    border-radius: 50%;
+    z-index: 99998;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s ease, height 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, transform 0.08s ease-out;
+  }
+
+  .custom-cursor-ring.cursor-hover {
+    width: 60px;
+    height: 60px;
+    border-color: #FF4D5A;
+    background-color: rgba(193, 18, 31, 0.12);
+    backdrop-filter: blur(2px);
+  }
+}
+
+@media (hover: none) or (pointer: coarse) {
+  .custom-cursor-dot,
+  .custom-cursor-ring {
+    display: none !important;
+  }
+}
+
+/* Subtle glow effects */
+.radial-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(193, 18, 31, 0.18) 0%, rgba(20, 20, 20, 0) 70%);
+}
+
+.radial-glow-center {
+  background: radial-gradient(circle at 50% 50%, rgba(138, 15, 24, 0.22) 0%, rgba(20, 20, 20, 0) 65%);
+}
+
+/* Glassmorphism Card Base */
+.glass-card {
+  background: rgba(28, 28, 28, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-hover:hover {
+  border-color: rgba(193, 18, 31, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px -10px rgba(193, 18, 31, 0.2);
+}
+
+/* Smooth custom scrollbar for Dark and Light modes */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+html.dark ::-webkit-scrollbar-track {
+  background: #141414;
+}
+
+html.light ::-webkit-scrollbar-track {
+  background: #F3F4F6;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: #2E2E2E;
+  border-radius: 4px;
+}
+
+html.light ::-webkit-scrollbar-thumb {
+  background: #D1D5DB;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C1121F;
+}
+
+/* Hide scrollbar utility across all modern browsers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
