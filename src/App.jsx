@@ -152,7 +152,7 @@ function TalkToExpertModal({ isOpen, onClose, selectedProject = '', theme = 'dar
   };
 
   const whatsappMessage = encodeURIComponent(
-    `Hi Sami, I reviewed your work on Sami Softz and would like to talk to an expert about building a project (${formData.projectType || 'Software Product'}).`
+    `Hi Sami, I reviewed your work on Samisoftz and would like to talk to an expert about building a project (${formData.projectType || 'Software Product'}).`
   );
 
   return (
@@ -173,7 +173,7 @@ function TalkToExpertModal({ isOpen, onClose, selectedProject = '', theme = 'dar
             <div className="h-6 sm:h-7 flex items-center flex-shrink-0">
               <img 
                 src={theme === 'dark' ? './logo-white.png' : './logo.png'} 
-                alt="Sami Softz" 
+                alt="Samisoftz" 
                 className="h-full w-auto object-contain" 
               />
             </div>
@@ -440,7 +440,7 @@ function TalkToExpertModal({ isOpen, onClose, selectedProject = '', theme = 'dar
                 <div className={`p-3 rounded-lg text-xs font-mono border ${
                   theme === 'dark' ? 'bg-black/40 text-neutral-200 border-white/5' : 'bg-white text-neutral-800 border-neutral-200'
                 }`}>
-                  "Hi Sami, I reviewed your work on Sami Softz and would like to talk to an expert about building a project."
+                  "Hi Sami, I reviewed your work on Samisoftz and would like to talk to an expert about building a project."
                 </div>
               </div>
 
@@ -738,7 +738,7 @@ export default function App() {
   const faqItems = [
     {
       q: "Who actually builds my product? Will I be handed off to a junior?",
-      a: "No. At Sami Softz, you collaborate directly with founder Sami from initial architecture planning through sprint execution and release. We do not use commission-based sales reps or offshore junior pools. You get senior engineering discipline and direct accountability."
+      a: "No. At SamiSoftz, you collaborate directly with founder Sami from initial architecture planning through sprint execution and release. We do not use commission-based sales reps or offshore junior pools. You get senior engineering discipline and direct accountability."
     },
     {
       q: "Who owns the code, intellectual property, and infrastructure?",
@@ -787,11 +787,11 @@ export default function App() {
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
           
-          {/* Official Sami Softz Logo */}
+          {/* Official Samisoftz Logo */}
           <div className="flex items-center gap-3">
             <img 
               src={isDark ? './logo-white.png' : './logo.png'} 
-              alt="Sami Softz Logo" 
+              alt="Samisoftz Logo" 
               className="h-8 sm:h-9 w-auto object-contain hover:opacity-95 transition-opacity" 
             />
             <span className={`hidden sm:inline-block px-2.5 py-0.5 rounded-full text-[10px] font-semibold tracking-wider uppercase border ${
@@ -1130,7 +1130,7 @@ export default function App() {
             Tired of Freelancers Ghosting & Agencies Overcharging?
           </h2>
           <p className={`text-sm sm:text-base mt-3 ${isDark ? 'text-neutral-400' : 'text-neutral-600'}`}>
-            Here is why 70% of software projects fail with traditional vendors—and how Sami Softz eliminates every point of friction.
+            Here is why 70% of software projects fail with traditional vendors—and how Samisoftz eliminates every point of friction.
           </p>
         </div>
 
@@ -1154,7 +1154,7 @@ export default function App() {
             <div className={`p-3.5 rounded-xl border text-xs ${
               isDark ? 'bg-white/5 border-white/5 text-neutral-300' : 'bg-red-50/70 border-red-100 text-neutral-800'
             }`}>
-              <span className="text-[#C1121F] font-bold block mb-1">The Sami Softz Fix:</span>
+              <span className="text-[#C1121F] font-bold block mb-1">The Samisoftz Fix:</span>
               You work directly with founder Sami. Senior architectural oversight on every commit.
             </div>
           </div>
@@ -1177,7 +1177,7 @@ export default function App() {
             <div className={`p-3.5 rounded-xl border text-xs ${
               isDark ? 'bg-white/5 border-white/5 text-neutral-300' : 'bg-red-50/70 border-red-100 text-neutral-800'
             }`}>
-              <span className="text-[#C1121F] font-bold block mb-1">The Sami Softz Fix:</span>
+              <span className="text-[#C1121F] font-bold block mb-1">The Samisoftz Fix:</span>
               100% of code is committed straight into your own GitHub and developer accounts from day one.
             </div>
           </div>
@@ -1200,7 +1200,7 @@ export default function App() {
             <div className={`p-3.5 rounded-xl border text-xs ${
               isDark ? 'bg-white/5 border-white/5 text-neutral-300' : 'bg-red-50/70 border-red-100 text-neutral-800'
             }`}>
-              <span className="text-[#C1121F] font-bold block mb-1">The Sami Softz Fix:</span>
+              <span className="text-[#C1121F] font-bold block mb-1">The Samisoftz Fix:</span>
               Milestone-based approvals. You approve working software before paying for the next stage.
             </div>
           </div>
@@ -1384,7 +1384,7 @@ export default function App() {
             Real Software Shipped. Real Users Scaled.
           </h2>
           <p className={`text-sm sm:text-base mt-2 ${isDark ? 'text-neutral-400' : 'text-neutral-600'}`}>
-            We do not show theoretical Figma concepts. Here is working software built by Sami Softz, running in production right now.
+            We do not show theoretical Figma concepts. Here is working software built by Samisoftz, running in production right now.
           </p>
         </div>
 
@@ -1721,7 +1721,7 @@ export default function App() {
                             </div>
                             <div className="flex justify-between text-neutral-400 text-[11px]">
                               <span>Statut Maintenance:</span>
-                              <span className="text-emerald-400 font-medium">SLA Actif par Sami Softz</span>
+                              <span className="text-emerald-400 font-medium">SLA Actif par Samisoftz</span>
                             </div>
                           </div>
                         </div>
@@ -2007,7 +2007,7 @@ export default function App() {
             }`}>
               <img 
                 src={isDark ? './logo-white.png' : './logo.png'} 
-                alt="Sami Softz Founder" 
+                alt="Samisoftz Founder" 
                 className="w-full h-auto object-contain" 
               />
             </div>
@@ -2026,7 +2026,7 @@ export default function App() {
               <p className={`text-sm sm:text-base leading-relaxed ${
                 isDark ? 'text-neutral-300' : 'text-neutral-700'
               }`}>
-                When you hire an agency, you often pay for account executives, overhead, and bloated management layers. At Sami Softz, I lead your product from day one. We map your database schemas together, test staging builds on weekly milestone calls, and push production-ready code directly to your GitHub.
+                When you hire an agency, you often pay for account executives, overhead, and bloated management layers. At Samisoftz, I lead your product from day one. We map your database schemas together, test staging builds on weekly milestone calls, and push production-ready code directly to your GitHub.
               </p>
 
               <div className={`pt-2 flex flex-wrap items-center justify-center sm:justify-start gap-4 text-xs ${
@@ -2217,7 +2217,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           
           <div className="flex items-center gap-3">
-            <img src="./logo-white.png" alt="Sami Softz" className="h-6 w-auto object-contain" />
+            <img src="./logo-white.png" alt="Samisoftz" className="h-6 w-auto object-contain" />
             <span className="text-neutral-500">| Custom Software & Mobile Product Development</span>
           </div>
 
